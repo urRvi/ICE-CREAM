@@ -1,6 +1,6 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9; /* Soft cream background */
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Fun, cheerful font */
+    background-color: #fff7e6; /* Soft cream color */
     color: #333;
     text-align: center;
     margin: 0;
@@ -11,13 +11,15 @@ body {
     max-width: 600px;
     margin: 50px auto;
     padding: 20px;
-    background: #fff; /* White background for the container */
+    background: #ffffff; /* White box for content */
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
-    color: #ff5722; /* Bright orange for heading */
+    color: #ff4081; /* Bright pink for heading */
+    font-size: 2em;
+    margin-bottom: 10px;
 }
 
 p {
@@ -30,7 +32,7 @@ button {
     padding: 10px 20px;
     font-size: 16px;
     color: #fff;
-    background-color: #007bff; /* Blue button */
+    background-color: #ff5722; /* Orange button */
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -38,5 +40,5 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    background-color: #e64a19; /* Darker orange on hover */
 }
