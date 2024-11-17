@@ -16,9 +16,9 @@
         // Extract flavor from URL parameters
         const urlParams = new URLSearchParams(window.location.search);
         const flavor = urlParams.get("flavor");
-        document.getElementById("flavor-message").innerText = flavor 
-            ? `You selected: ${flavor}` 
-            : "No flavor selected! Go back and choose your mood.";
+        document.getElementById("flavor-message").innerHTML = flavor
+            ? `You selected: <span style="color: #4caf50; font-weight: bold;">${flavor}</span>`
+            : "No flavor selected! Please go back and choose one.";
     </script>
 </body>
 </html>
