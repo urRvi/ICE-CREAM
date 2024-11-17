@@ -13,18 +13,24 @@
         <form id="ice-cream-form">
             <label for="flavor">Select your favorite flavor:</label>
             <select id="flavor" name="flavor">
-                <option value="salted-caramel-brownie">Salted Caramel Brownie (Kwality Walls)</option>
-                <option value="black-currant">Black Currant</option>
-                <option value="chocolate">Chocolate Ice Cream</option>
-                <option value="blueberry-cheesecake">Blueberry Cheesecake (Keventers)</option>
-                <option value="best-ice-cream">Best Ice Cream Batao</option>
-                <option value="mera-mood-nhi">Mera Mood Nhi</option>
-                <option value="lassi-bhang-wali">Lassi H Bhang Wali</option>
+                <option value="Salted Caramel Brownie (Kwality Walls)">Salted Caramel Brownie (Kwality Walls)</option>
+                <option value="Black Currant">Black Currant</option>
+                <option value="Chocolate Ice Cream">Chocolate Ice Cream</option>
+                <option value="Blueberry Cheesecake (Keventers)">Blueberry Cheesecake (Keventers)</option>
+                <option value="Best Ice Cream Batao">Best Ice Cream Batao</option>
+                <option value="Mera Mood Nhi">Mera Mood Nhi</option>
+                <option value="Lassi H Bhang Wali">Lassi H Bhang Wali</option>
             </select>
             <button type="submit">Submit</button>
         </form>
-        <div id="selected-flavor"></div>
     </div>
-    <script src="script.js"></script>
+    <script>
+        // Redirect to the second page with the selected flavor as a query parameter
+        document.getElementById("ice-cream-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            const flavor = document.getElementById("flavor").value;
+            window.location.href = `result.html?flavor=${encodeURIComponent(flavor)}`;
+        });
+    </script>
 </body>
 </html>
