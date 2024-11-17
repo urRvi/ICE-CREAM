@@ -13,10 +13,12 @@
         <button onclick="window.location.href='index.html'">Back to Flavors</button>
     </div>
     <script>
-        // Get the flavor from the URL query parameter and display it
+        // Extract flavor from URL parameters
         const urlParams = new URLSearchParams(window.location.search);
         const flavor = urlParams.get("flavor");
-        document.getElementById("flavor-message").innerText = `You selected: ${flavor}`;
+        document.getElementById("flavor-message").innerText = flavor 
+            ? `You selected: ${flavor}` 
+            : "No flavor selected! Go back and choose your mood.";
     </script>
 </body>
 </html>
